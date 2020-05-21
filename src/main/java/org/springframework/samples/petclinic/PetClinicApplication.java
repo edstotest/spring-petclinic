@@ -28,7 +28,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication(proxyBeanMethods = false)
 public class PetClinicApplication {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) {		
+		System.exit(0);
 		SpringApplication.run(PetClinicApplication.class, args);
 	}
 
