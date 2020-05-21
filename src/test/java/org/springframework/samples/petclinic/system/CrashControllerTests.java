@@ -47,5 +47,10 @@ class CrashControllerTests {
 				.andExpect(model().attributeExists("exception")).andExpect(forwardedUrl("exception"))
 				.andExpect(status().isOk());
 	}
+	
+	@Test
+	void badtTest() throws Exception {
+		throw new Exception("Bad");
+	}
 
 }
